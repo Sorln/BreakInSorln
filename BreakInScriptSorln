@@ -1,0 +1,100 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Break In Story     (Sorln#3037)", "DarkTheme")
+local Tab = Window:NewTab("Items")
+local Section = Tab:NewSection("Get the Goods!")
+Section:NewButton("Apple", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Apple"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Teddy Bear", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "TeddyBloxpin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Bat", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Bat"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Chips", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Chips"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Planks", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Plank"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Key", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Key"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("PitchFork", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = true,
+    [2] = "Pitchfork"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BasementWeapon:FireServer(unpack(args))
+end)
+Section:NewButton("Hammer", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = true,
+    [2] = "Hammer"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BasementWeapon:FireServer(unpack(args))
+end)
+Section:NewButton("Steel Sword", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "LinkedSword"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Medkit", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Medkit"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+Section:NewButton("Cure", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Cure"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+end)
+local Tab = Window:NewTab("Cat")
+local Section = Tab:NewSection("Friend the Cat")
+Section:NewButton("Friend the Cat", "ButtonInfo", function()
+    print("Clicked")
+    game:GetService("ReplicatedStorage").RemoteEvents.Cattery:FireServer()
+end)
